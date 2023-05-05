@@ -9,7 +9,7 @@ function sim-from-c(){
 }
 
 function sim-from-arm(){
-	touch simulation && arm_assemble main && ./main $1 > simulation && python3 -m visualize
+	touch simulation && arm-assemble main && ./main $1 > simulation && python3 -m visualize
 }
 
 
